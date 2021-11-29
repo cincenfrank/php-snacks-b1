@@ -34,11 +34,11 @@ $emailCharToMatch = ["@", "."];
             }
         }
         // email validation logic
-        if (isset($_GET["email"])) {
+        if (isset($_GET["mail"])) {
 
             $emailSubCheck = true;
             for ($i = 0; $i < count($emailCharToMatch); $i++) {
-                if (!strstr($_GET["email"], $emailCharToMatch[$i])) {
+                if (!strstr($_GET["mail"], $emailCharToMatch[$i])) {
                     $emailSubCheck = false;
                 }
             }
